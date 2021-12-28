@@ -1,7 +1,9 @@
 import React from 'react';
+import './App.css';
+import Header from './Header';
 
 const App = () => {
-  return <h1>Headwire Test</h1>;
+  return <Header />;
 };
 
 export default App;
