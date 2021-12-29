@@ -1,0 +1,89 @@
+#services {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.over-title {
+  font-size: 0.7rem;
+  color: rgba(100, 100, 100);
+  text-transform: uppercase;
+}
+.over-title::before,
+.stat::before {
+  content: '[';
+  padding: 0 6px;
+}
+.over-title::after,
+.stat::after {
+  content: ']';
+  padding: 0 6px;
+}
+.title {
+  position: relative;
+  width: fit-content;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  padding: 8px 0;
+  letter-spacing: -0.8px;
+}
+.title::after {
+  content: '';
+  position: absolute;
+  width: 24%;
+  bottom: 0;
+  left: 38%;
+  border-bottom: 2px dotted #000;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 0 6rem;
+}
+.card {
+  padding: 2rem 3rem;
+  background: rgb(240, 240, 240);
+}
+.card img {
+  margin: 0 auto;
+}
+.card-title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 16px;
+}
+.card-p {
+  font-weight: 100;
+  width: 86%;
+  margin: 0 auto;
+}
+.read-more {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.stats-container {
+  display: flex;
+  padding: 5rem 6rem;
+  padding-bottom: 0;
+  justify-content: space-around;
+}
+.stats {
+  margin: 0 2rem;
+}
+.stat {
+  font-size: 2rem;
+  color: rgb(180, 180, 180);
+}
+.stat-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
