@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Blog from './Blog';
+import Footer from './Footer';
 import Founder from './Founder';
 import Header from './Header';
 import Services from './Services';
@@ -14,6 +15,7 @@ const App = () => {
       <Services />
       <Team />
       <Blog />
+      <Footer />
     </>
   );
 };
