@@ -1,0 +1,89 @@
+footer {
+  background: #000;
+  color: #fff;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 6rem 10rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+.footer-col .logo {
+  width: 65%;
+  padding-bottom: 2rem;
+}
+.footer-col p {
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: rgb(200, 200, 200);
+}
+.footer-sm-container {
+  display: flex;
+  margin: 1.2rem -0.7rem;
+}
+.footer-sm {
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 50%;
+  padding: 8px;
+  margin: 0 0.5rem;
+}
+.footer-title {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+.footer-subsection {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: rgb(200, 200, 200);
+}
+.footer-subsection div {
+  margin: 1rem 0;
+  color: rgb(200, 200, 200);
+}
+.location {
+  display: flex;
+  align-items: center;
+}
+.location svg {
+  margin-right: 6px;
+}
+.input-container {
+  position: relative;
+}
+.input-container input {
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+  width: 100%;
+}
+.input-container svg {
+  position: absolute;
+  right: 6px;
+  top: 19%;
+  color: #fff;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.fineprint,
+.tso-policy {
+  display: flex;
+}
+.fineprint {
+  justify-content: space-between;
+  padding: 1.2rem 10rem;
+  color: rgb(100, 100, 100);
+}
+.fineprint span {
+  color: #fff;
+}
+.tou {
+  margin-right: 12px;
+}
+.policy {
+  margin-left: 12px;
+}
