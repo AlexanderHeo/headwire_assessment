@@ -1,8 +1,9 @@
 #blog {
-  padding: 3rem 16rem;
+  padding: 6rem 16rem 5rem;
 }
 .blog-button {
   position: relative;
+  margin: 12px 30px;
   padding: 8px;
 }
 .blog-button button {
@@ -28,12 +29,21 @@
 #blog section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 3rem -1rem;
+  margin: 2rem;
+}
+.blog-title .over-title {
+  margin-left: 36px;
+}
+.blog-title .title {
+  font-size: 2rem;
+  letter-spacing: -0.9px;
+  margin-left: 40px;
 }
 .blog-title .title::after {
   left: 0;
 }
 #blog .card {
+  height: fit-content;
   background: #fff;
   border: 1px solid rgb(220, 220, 220);
   padding: 1rem;
@@ -41,6 +51,7 @@
 }
 #blog .img {
   border: 1px solid rgb(240, 240, 240);
+  width: 100%;
 }
 #blog .img-container {
   position: relative;
@@ -76,7 +87,6 @@
   text-transform: uppercase;
 }
 .blog-title {
-  margin: 0.7rem 0;
   font-size: 1.1rem;
 }
 .blog-p p {

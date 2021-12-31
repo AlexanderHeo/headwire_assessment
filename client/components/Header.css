@@ -2,13 +2,13 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 760px;
+  min-height: 855px;
   color: #fff;
 }
 
 .logo {
   position: relative;
-  width: 130px;
+  width: 140px;
 }
 .logo img {
   position: relative;
@@ -110,13 +110,18 @@ li:hover {
   position: absolute;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   pointer-events: none;
 }
 .bg {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   z-index: -10;
+}
+.bg img {
+  height: 100%;
 }
 .bg-nav {
   position: absolute;
@@ -125,8 +130,8 @@ li:hover {
   pointer-events: initial;
 }
 .bg-nav-arrow {
-  width: 65.5px;
-  height: 65.5px;
+  width: 70px;
+  height: 70px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -148,24 +153,31 @@ li:hover {
 }
 .bg::before {
   width: 100%;
-  height: calc(100% - 131px);
+  height: calc(100% - 140px);
   border-top: 0.5px solid rgba(255, 255, 255, 0.5);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
-  margin-top: 65.5px;
-  margin-bottom: 65.5px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .bg::after {
-  width: calc(100% - 131px);
+  width: calc(100% - 140px);
   height: 100%;
   border-left: 0.5px solid rgba(255, 255, 255, 0.5);
   border-right: 0.5px solid rgba(255, 255, 255, 0.5);
-  margin-left: 65.5px;
-  margin-right: 65.5px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 .h1,
 .p {
   position: relative;
   text-align: center;
+}
+.h1 {
+  margin-top: 20px;
+}
+.p {
+  font-size: 0.95rem;
+  margin-top: -30px;
 }
 .knockout {
   display: flex;
@@ -173,9 +185,9 @@ li:hover {
   align-items: center;
   margin-right: -100px;
   text-transform: uppercase;
-  letter-spacing: 80px;
+  letter-spacing: 75px;
   line-height: 1.2;
-  font-size: 10rem;
+  font-size: 9.6rem;
   font-weight: 900;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.3);
@@ -192,13 +204,16 @@ h1 {
   align-items: center;
   font-size: 4.5rem;
   font-weight: 200;
+  letter-spacing: -2.3px;
 }
 p {
   line-height: 1.8;
 }
+.bg button {
+  margin-top: 38px;
+}
 button {
-  padding: 16px 32px;
-  margin-block-start: 16px;
+  padding: 14px 30px;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;

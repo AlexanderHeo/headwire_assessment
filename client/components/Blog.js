@@ -18,7 +18,7 @@ const Blog = () => {
         <div className='card'>
           <div className='img-container'>
             <div className='blog-img-title'>Interior</div>
-            <img src='images/grid1.jpeg' alt='' />
+            <img className='img' src='images/grid1.jpeg' alt='' />
           </div>
           <div className='blog-info'>
             <div className='blog-overtitle'>
@@ -38,7 +38,7 @@ const Blog = () => {
         <div className='card'>
           <div className='img-container'>
             <div className='blog-img-title'>Interior</div>
-            <img src='images/grid2.jpeg' alt='' />
+            <img className='img' src='images/grid2.jpeg' alt='' />
           </div>
           <div className='blog-info'>
             <div className='blog-overtitle'>
@@ -58,7 +58,7 @@ const Blog = () => {
         <div className='card'>
           <div className='img-container'>
             <div className='blog-img-title'>Interior</div>
-            <img src='images/grid3.jpeg' alt='' />
+            <img className='img' src='images/grid3.jpeg' alt='' />
           </div>
           <div className='blog-info'>
             <div className='blog-overtitle'>
