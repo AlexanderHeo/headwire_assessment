@@ -10,6 +10,7 @@ import Team from './Team';
 const App = () => {
   return (
     <div className='wrapper'>
+      <div className='borders' />
       <Header />
       <Founder />
       <Services />
