@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsDot } from 'react-icons/bs';
 import { FiPlus } from 'react-icons/fi';
 import { TeamImages } from '../lib/images';
-import './Team.css';
+import '../stylesheets/Team.css';
 
 const Team = () => {
   const [index, setIndex] = useState(0);

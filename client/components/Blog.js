@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsDot } from 'react-icons/bs';
-import './Blog.css';
+import '../stylesheets/Blog.css';
 
 const Blog = () => {
   return (

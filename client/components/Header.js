@@ -6,7 +6,7 @@ import { GoTriangleRight, GoTriangleUp } from 'react-icons/go';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { RiShoppingBag2Line } from 'react-icons/ri';
 import { HeroImages } from '../lib/images';
-import './Header.css';
+import '../stylesheets/Header.css';
 import Logo from './logo.svg';
 
 const Header = () => {

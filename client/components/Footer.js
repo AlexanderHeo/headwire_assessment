@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 import { IoMdPaperPlane } from 'react-icons/io';
 import { IoLocationOutline, IoMailOpenOutline } from 'react-icons/io5';
-import './Footer.css';
+import '../stylesheets/Footer.css';
 
 const Footer = () => {
   return (
