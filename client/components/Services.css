@@ -1,5 +1,5 @@
 #services {
-  padding: 6rem 4rem;
+  padding: 5.2rem 4rem 3.3rem;
   text-align: center;
 }
 .title-container {
@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 47px;
 }
 .over-title {
   font-size: 0.7rem;
@@ -44,23 +44,29 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
-  padding: 0 6rem;
+  padding: 0 14rem 2rem;
 }
 .card {
-  padding: 2rem 3rem;
+  width: 300px;
+  height: 260px;
+  padding: 1.3rem 3rem;
   background: rgb(240, 240, 240);
 }
 .card img {
+  width: 60px;
   margin: 0 auto;
 }
+.card:nth-child(2) img {
+  width: 76px;
+}
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-transform: capitalize;
   padding: 16px;
 }
 .card-p {
+  font-size: 0.8rem;
   font-weight: 100;
-  width: 86%;
   margin: 0 auto;
 }
 .read-more {
@@ -72,8 +78,7 @@
 
 .stats-container {
   display: flex;
-  padding: 5rem 6rem;
-  padding-bottom: 0;
+  padding: 4rem 12rem 2rem;
   justify-content: space-around;
 }
 .stats {

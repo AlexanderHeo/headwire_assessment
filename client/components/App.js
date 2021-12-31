@@ -9,14 +9,14 @@ import Team from './Team';
 
 const App = () => {
   return (
-    <>
+    <div className='wrapper'>
       <Header />
       <Founder />
       <Services />
       <Team />
       <Blog />
       <Footer />
-    </>
+    </div>
   );
 };
 
