@@ -1,14 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GoTriangleRight, GoTriangleUp } from 'react-icons/go';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { RiShoppingBag2Line } from 'react-icons/ri';
+import { HeroImages } from '../lib/images';
 import './Header.css';
 import Logo from './logo.svg';
 
 const Header = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => changeSlide(), 10000);
+    return () => clearInterval(interval);
+  }, [HeroImages]);
+
+  const changeSlide = () => {
+    const lastIndex = HeroImages.length - 1;
+    setCurrentIndex((currentIndex) => {
+      return currentIndex === lastIndex ? 0 : currentIndex + 1;
+    });
+  };
+
+  const previousIndex = () => {
+    const prevIndex =
+      currentIndex === 0 ? HeroImages.length - 1 : currentIndex - 1;
+    setCurrentIndex(prevIndex);
+  };
+
+  const nextIndex = () => {
+    const nextIndex =
+      currentIndex === HeroImages.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(nextIndex);
+  };
   return (
     <header>
       <nav className='main-nav'>
@@ -93,8 +119,8 @@ const Header = () => {
       <div className='hero'>
         <div className='bg'>
           <img
-            src='images/slider3-home1.jpeg'
-            alt='modern bedroom, with black closet, bed, white curtains'
+            src={HeroImages[currentIndex].imgSource}
+            alt={HeroImages[currentIndex].altText}
           />
         </div>
         <div className='h1'>
@@ -115,10 +141,18 @@ const Header = () => {
       </div>
       <div className='bg-nav'>
         <div className='bg-nav-arrow'>
-          <FiArrowLeft strokeWidth='1' size='1.5rem' />
+          <FiArrowLeft
+            strokeWidth='1'
+            size='1.5rem'
+            onClick={() => previousIndex()}
+          />
         </div>
         <div className='bg-nav-arrow'>
-          <FiArrowRight strokeWidth='1' size='1.5rem' />
+          <FiArrowRight
+            strokeWidth='1'
+            size='1.5rem'
+            onClick={() => nextIndex()}
+          />
         </div>
       </div>
     </header>
