@@ -4,6 +4,7 @@ import Blog from './Blog';
 import Footer from './Footer';
 import Founder from './Founder';
 import Header from './Header';
+import Scroll from './ScrollToTop.js';
 import Services from './Services';
 import Team from './Team';
 
@@ -17,6 +18,7 @@ const App = () => {
       <Team />
       <Blog />
       <Footer />
+      <Scroll />
     </div>
   );
 };
