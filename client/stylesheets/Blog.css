@@ -29,7 +29,8 @@
 #blog section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
 }
 .blog-title .over-title {
   margin-left: 36px;
