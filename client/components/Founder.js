@@ -3,7 +3,7 @@ import '../stylesheets/Founder.css';
 
 const Founder = () => {
   return (
-    <div id='founder'>
+    <div id='founder' className='flx-cnt w100'>
       <div className='quote'>
         "Even if you don't have a ready sketch of what you want &mdash; we will
         help you to get the result you dreamed of."
@@ -13,8 +13,8 @@ const Founder = () => {
         alt='David Oswald, founder of company'
       />
       <div className='signature'>
-        <p className='name'>David Oswald</p>
-        <p className='founder-title'>founder of Company</p>
+        <p className='cap'>David Oswald</p>
+        <p className='founder-title upper'>founder of Company</p>
       </div>
     </div>
   );

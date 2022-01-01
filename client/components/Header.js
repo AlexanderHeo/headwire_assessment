@@ -40,10 +40,10 @@ const Header = () => {
       <nav className='main-nav'>
         <div className='logo'>
           <img src={Logo} alt="theratio's logo" />
-          <div className='logo-background' />
+          <div className='logo-background pos-abs h100' />
         </div>
         <div className='nav-section'>
-          <ul>
+          <ul className='flx-cnt w100 h100 upper'>
             <li>
               home
               <BiChevronDown />
@@ -77,7 +77,7 @@ const Header = () => {
           </ul>
         </div>
         <div className='nav-section'>
-          <ul>
+          <ul className='flx-cnt w100 h100 upper'>
             <li>
               <div className='button-cart'>
                 <RiShoppingBag2Line size='1.2rem' />
@@ -96,8 +96,8 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <nav className='social-media'>
-        <ul>
+      <nav className='social-media flx-cnt'>
+        <ul className='flx-cnt w100 h100 upper'>
           <li>
             instagram
             <GoTriangleRight className='sm-triangle hide' />
@@ -116,16 +116,18 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className='hero'>
-        <div className='bg'>
+      <div className='hero flx-cnt-col w100 h100'>
+        <div className='bg pos-abs h100'>
           <img
             src={HeroImages[currentIndex].imgSource}
             alt={HeroImages[currentIndex].altText}
           />
         </div>
-        <div className='h1'>
-          <span className='knockout'>studio</span>
-          <h1>Best Furniture and Decor</h1>
+        <div className='h1 txt-cnt'>
+          <span className='knockout flx-cnt upper'>studio</span>
+          <h1 className='pos-abs w100 h100 flx-cnt'>
+            Best Furniture and Decor
+          </h1>
         </div>
         <div className='p'>
           <p>

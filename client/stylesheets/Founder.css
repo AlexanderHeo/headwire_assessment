@@ -1,10 +1,6 @@
 #founder {
-  width: 100%;
-  background: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: var(--black);
+  color: var(--white);
 }
 .quote {
   max-width: 26%;
@@ -21,11 +17,7 @@
 .signature {
   margin-top: -16px;
 }
-.name {
-  text-transform: capitalize;
-}
 .founder-title {
-  text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 100;
 }

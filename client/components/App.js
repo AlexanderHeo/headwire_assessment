@@ -1,5 +1,6 @@
 import React from 'react';
 import '../stylesheets/App.css';
+import '../stylesheets/Utility.css';
 import Blog from './Blog';
 import Footer from './Footer';
 import Founder from './Founder';
@@ -11,7 +12,7 @@ import Team from './Team';
 const App = () => {
   return (
     <div className='wrapper'>
-      <div className='borders' />
+      <div className='borders w100 h100' />
       <Header />
       <Founder />
       <Services />

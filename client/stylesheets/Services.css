@@ -3,16 +3,11 @@
   text-align: center;
 }
 .title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 47px;
 }
 .over-title {
   font-size: 0.7rem;
-  color: rgba(100, 100, 100);
-  text-transform: uppercase;
+  color: var(--gray-4);
 }
 .over-title::before,
 .stat::before {
@@ -28,7 +23,6 @@
   position: relative;
   width: fit-content;
   font-size: 1.8rem;
-  text-transform: capitalize;
   padding: 8px 0;
   letter-spacing: -0.8px;
 }
@@ -51,7 +45,7 @@
   width: 300px;
   height: 260px;
   padding: 1.3rem 3rem;
-  background: rgb(240, 240, 240);
+  background: var(--gray-0);
 }
 .card img {
   width: 60px;
@@ -62,7 +56,6 @@
 }
 .card-title {
   font-size: 1.1rem;
-  text-transform: capitalize;
   padding: 16px;
 }
 .card-p {
@@ -72,7 +65,6 @@
 }
 .read-more {
   margin: 1rem 0;
-  text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 600;
 }
@@ -87,9 +79,8 @@
 }
 .stat {
   font-size: 2rem;
-  color: rgb(180, 180, 180);
+  color: var(--gray-2);
 }
 .stat-title {
-  text-transform: uppercase;
   font-weight: 600;
 }

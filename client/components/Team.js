@@ -18,18 +18,20 @@ const Team = () => {
         <div className='over-title'>Our professionals</div>
         <div className='title'>Meet our skilled Team</div>
       </div>
-      <div className='team-carousel'>
+      <div className='flx-cnt-col'>
         <div className='team-images'>
           <div className='team-image'>
-            <div className='team-overlay'>
-              <div className='team-name-container'>
+            <div className='team-overlay flx-cnt pos-abs w100 h100'>
+              <div className='team-name-container flx-cnt h100'>
                 <div className='team-name'>
                   {TeamImages[index].first_name} {TeamImages[index].last_name}
                 </div>
                 <FiPlus className='team-plus' size='2rem' />
               </div>
               <div className='team-title-container'>
-                <div className='team-title'>{TeamImages[index].job_title}</div>
+                <div className='team-title upper'>
+                  {TeamImages[index].job_title}
+                </div>
               </div>
             </div>
             <div className='team-img-container'>
@@ -40,8 +42,8 @@ const Team = () => {
             </div>
           </div>
           <div className='team-image'>
-            <div className='team-overlay'>
-              <div className='team-name-container'>
+            <div className='team-overlay flx-cnt pos-abs w100 h100'>
+              <div className='team-name-container flx-cnt h100'>
                 <div className='team-name'>
                   {TeamImages[index + 1].first_name}{' '}
                   {TeamImages[index + 1].last_name}
@@ -49,7 +51,7 @@ const Team = () => {
                 <FiPlus className='team-plus' size='2rem' />
               </div>
               <div className='team-title-container'>
-                <div className='team-title'>
+                <div className='team-title upper'>
                   {TeamImages[index + 1].job_title}
                 </div>
               </div>
@@ -62,8 +64,8 @@ const Team = () => {
             </div>
           </div>
           <div className='team-image'>
-            <div className='team-overlay'>
-              <div className='team-name-container'>
+            <div className='team-overlay flx-cnt pos-abs w100 h100'>
+              <div className='team-name-container flx-cnt h100'>
                 <div className='team-name'>
                   {TeamImages[index + 2].first_name}{' '}
                   {TeamImages[index + 2].last_name}
@@ -71,7 +73,7 @@ const Team = () => {
                 <FiPlus className='team-plus' size='2rem' />
               </div>
               <div className='team-title-container'>
-                <div className='team-title'>
+                <div className='team-title upper'>
                   {TeamImages[index + 2].job_title}
                 </div>
               </div>
@@ -84,8 +86,8 @@ const Team = () => {
             </div>
           </div>
           <div className='team-image'>
-            <div className='team-overlay'>
-              <div className='team-name-container'>
+            <div className='team-overlay flx-cnt pos-abs w100 h100'>
+              <div className='team-name-container flx-cnt h100'>
                 <div className='team-name'>
                   {TeamImages[index + 3].first_name}{' '}
                   {TeamImages[index + 3].last_name}
@@ -93,7 +95,7 @@ const Team = () => {
                 <FiPlus className='team-plus' size='2rem' />
               </div>
               <div className='team-title-container'>
-                <div className='team-title'>
+                <div className='team-title upper'>
                   {TeamImages[index + 3].job_title}
                 </div>
               </div>
@@ -106,8 +108,8 @@ const Team = () => {
             </div>
           </div>
           <div className='team-image'>
-            <div className='team-overlay'>
-              <div className='team-name-container'>
+            <div className='team-overlay flx-cnt pos-abs w100 h100'>
+              <div className='team-name-container flx-cnt h100'>
                 <div className='team-name'>
                   {TeamImages[index + 4].first_name}{' '}
                   {TeamImages[index + 4].last_name}
@@ -115,7 +117,7 @@ const Team = () => {
                 <FiPlus className='team-plus' size='2rem' />
               </div>
               <div className='team-title-container'>
-                <div className='team-title'>
+                <div className='team-title upper'>
                   {TeamImages[index + 4].job_title}
                 </div>
               </div>
@@ -129,16 +131,16 @@ const Team = () => {
           </div>
         </div>
         <div className='team-carousel-control'>
-          <div className='tcc'>
+          <div className='tcc flx-cnt'>
             <BsDot size='1.5rem' onClick={() => button1()} />
           </div>
-          <div className='tcc'>
+          <div className='tcc flx-cnt'>
             <BsDot size='1.5rem' onClick={() => button2()} />
           </div>
-          <div className='tcc'>
+          <div className='tcc flx-cnt'>
             <BsDot size='1.5rem' onClick={() => button3()} />
           </div>
-          <div className='tcc'>
+          <div className='tcc flx-cnt'>
             <BsDot size='1.5rem' onClick={() => button4()} />
           </div>
         </div>

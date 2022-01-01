@@ -1,13 +1,13 @@
 footer {
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
 }
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   padding: 5rem 18rem 4rem;
-  border-bottom: 1px solid rgb(100, 100, 100);
+  border-bottom: 1px solid var(--gray-4);
 }
 .footer-col .logo {
   width: 65%;
@@ -16,17 +16,39 @@ footer {
 .footer-col p {
   font-size: 0.8rem;
   font-weight: 100;
-  color: rgb(200, 200, 200);
+  color: var(--gray-2);
 }
 .footer-sm-container {
   display: flex;
   margin: 1.2rem -0.7rem;
 }
 .footer-sm {
-  border: 1px solid rgb(100, 100, 100);
+  border: 1px solid var(--gray-4);
   border-radius: 50%;
   padding: 8px;
   margin: 0 0.5rem;
+  transition: 0.25s ease-in-out;
+}
+.footer-sm:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.25s ease-in-out;
+}
+.footer-sm:hover.fb {
+  background: var(--fb);
+  color: var(--white);
+}
+.footer-sm:hover.tw {
+  background: var(--tw);
+  color: var(--white);
+}
+.footer-sm:hover.in {
+  background: var(--in);
+  color: var(--white);
+}
+.footer-sm:hover.ig {
+  background: var(--ig);
+  color: var(--white);
 }
 .footer-title {
   height: 50px;
@@ -37,11 +59,11 @@ footer {
 .footer-subsection {
   font-size: 0.8rem;
   letter-spacing: 0.5px;
-  color: rgb(200, 200, 200);
+  color: var(--gray-2);
 }
 .footer-subsection div {
   margin: 1rem 0;
-  color: rgb(200, 200, 200);
+  color: var(--gray-2);
 }
 .footer-subsection .input-container {
   position: relative;
@@ -51,6 +73,12 @@ footer {
   display: flex;
   align-items: center;
 }
+.location:hover {
+  cursor: pointer;
+}
+.footer-col:nth-child(3) .footer-subsection div {
+  cursor: pointer;
+}
 .location svg {
   margin-right: 6px;
 }
@@ -58,8 +86,8 @@ footer {
   position: relative;
 }
 .input-container input {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
   padding: 6px;
   width: 100%;
 }
@@ -67,7 +95,7 @@ footer {
   position: absolute;
   right: 6px;
   top: 19%;
-  color: #fff;
+  color: var(--white);
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -78,14 +106,21 @@ footer {
 .fineprint {
   justify-content: space-between;
   padding: 1.2rem 18rem;
-  color: rgb(100, 100, 100);
+  color: var(--gray-4);
 }
 .fineprint span {
-  color: #fff;
+  color: var(--white);
+}
+.fineprint span:hover {
+  cursor: pointer;
 }
 .tou {
   margin-right: 12px;
 }
 .policy {
   margin-left: 12px;
+}
+.tou:hover,
+.policy:hover {
+  cursor: pointer;
 }
