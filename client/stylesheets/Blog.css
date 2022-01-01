@@ -13,7 +13,7 @@
 .blog-button button::before {
   height: 110%;
   content: '';
-  border-right: 1px solid black;
+  border-right: 1px solid var(--black);
   position: absolute;
   bottom: -10px;
   right: -6px;
@@ -21,7 +21,7 @@
 .blog-button button::after {
   width: 100%;
   content: '';
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
   position: absolute;
   bottom: -6px;
   right: -10px;
@@ -29,7 +29,8 @@
 #blog section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
 }
 .blog-title .over-title {
   margin-left: 36px;
@@ -44,28 +45,27 @@
 }
 #blog .card {
   height: fit-content;
-  background: #fff;
-  border: 1px solid rgb(220, 220, 220);
+  background: var(--white);
+  border: 1px solid var(--gray-1);
   padding: 1rem;
   margin: 0.7rem;
 }
+#blog .card:hover {
+  cursor: pointer;
+}
 #blog .img {
-  border: 1px solid rgb(240, 240, 240);
-  width: 100%;
+  width: auto;
+  border: 1px solid var(--gray-0);
 }
 #blog .img-container {
   position: relative;
 }
 #blog .blog-img-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   padding: 6px 10px;
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   font-size: 0.7rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 .blog-info {
   margin: 1.5rem 0 0;
@@ -73,23 +73,20 @@
 .blog-overtitle {
   display: flex;
   font-size: 0.8rem;
-  color: rgb(100, 100, 100);
+  color: var(--gray-4);
 }
 .blog-overtitle svg:first-of-type {
   margin: 0 -0.2rem 0 0.3rem;
-  color: #000;
+  color: var(--black);
 }
 .blog-overtitle svg:last-of-type {
   margin: 0 0.3rem 0 -0.2rem;
-  color: #000;
-}
-.blog-overtitle small:last-of-type {
-  text-transform: uppercase;
+  color: var(--black);
 }
 .blog-title {
   font-size: 1.1rem;
 }
 .blog-p p {
   font-size: 0.8rem;
-  color: rgb(100, 100, 100);
+  color: var(--gray-3);
 }

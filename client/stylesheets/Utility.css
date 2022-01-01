@@ -1,0 +1,67 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --black-opaque-0: hsla(0, 0%, 0%, 0);
+  --black-opaque-5: hsla(0, 0%, 0%, 5);
+  --gray-0: hsl(0, 0%, 97%);
+  --gray-1: hsl(0, 0%, 91%);
+  --gray-2: hsl(0, 0%, 82%);
+  --gray-3: hsl(0, 0%, 65%);
+  --gray-4: hsl(0, 0%, 53%);
+  --gray-5: hsl(0, 0%, 43%);
+  --gray-6: hsl(0, 0%, 37%);
+  --gray-7: hsl(0, 0%, 30%);
+  --gray-8: hsl(0, 0%, 24%);
+  --gray-9: hsl(0, 0%, 16%);
+  --gray-10: hsl(0, 0%, 6%);
+  --gutter: 70px;
+  --border-light: 0.5px solid var(--gray-0);
+  --border-dark: 0.5px solid var(--gray-2);
+  --fb: hsl(220, 46%, 48%);
+  --tw: hsl(203, 89%, 53%);
+  --in: hsl(213, 63%, 43%);
+  --ig: radial-gradient(
+    circle at 30% 107%,
+    hsl(55, 96%, 79%) 0%,
+    hsl(55, 96%, 79%) 5%,
+    hsl(5, 98%, 64%) 45%,
+    hsl(319, 71%, 49%) 60%,
+    hsl(225, 83%, 54%) 90%
+  );
+}
+
+.flx-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flx-cnt-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grd-cnt {
+  display: grid;
+  justify-content: center;
+}
+.pos-abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.txt-cnt {
+  text-align: center;
+}
+.h100 {
+  height: 100%;
+}
+.w100 {
+  width: 100%;
+}
+.upper {
+  text-transform: uppercase;
+}
+.cap {
+  text-transform: capitalize;
+}

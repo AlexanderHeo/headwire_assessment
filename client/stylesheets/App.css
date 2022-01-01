@@ -46,6 +46,37 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
 .wrapper {
   max-width: 1520px;
+  margin: 0 auto;
+  position: relative;
+}
+.borders::before,
+.borders::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  border-right: var(--border-dark);
+  z-index: -20;
+}
+.borders::before {
+  width: calc(100% - 140px);
+  border-left: var(--border-dark);
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
+  z-index: -20;
+}
+.borders::after {
+  width: 50%;
+}
+
+.scroll-to-top {
+  position: sticky;
+  bottom: 25px;
+  left: 100%;
+  margin-top: -48px;
+  margin-right: 25px;
+  background: var(--gray-1);
+  z-index: 20;
 }

@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 import { IoMdPaperPlane } from 'react-icons/io';
 import { IoLocationOutline, IoMailOpenOutline } from 'react-icons/io5';
-import './Footer.css';
+import '../stylesheets/Footer.css';
 
 const Footer = () => {
   return (
@@ -20,16 +20,16 @@ const Footer = () => {
             We provide a full range of interior design, architectural design.
           </p>
           <div className='footer-sm-container'>
-            <div className='footer-sm'>
+            <div className='footer-sm fb'>
               <FaFacebookF size='0.8rem' />
             </div>
-            <div className='footer-sm'>
-              <FaLinkedinIn size='0.8rem' />
-            </div>
-            <div className='footer-sm'>
+            <div className='footer-sm tw'>
               <FaTwitter size='0.8rem' />
             </div>
-            <div className='footer-sm'>
+            <div className='footer-sm in'>
+              <FaLinkedinIn size='0.8rem' />
+            </div>
+            <div className='footer-sm ig'>
               <FaInstagram size='0.8rem' />
             </div>
           </div>
