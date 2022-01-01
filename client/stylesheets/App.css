@@ -74,3 +74,13 @@ h6 {
 .borders::after {
   width: 50%;
 }
+
+.scroll-to-top {
+  position: sticky;
+  bottom: 25px;
+  left: 100%;
+  margin-top: -48px;
+  margin-right: 25px;
+  background: rgb(240, 240, 240);
+  z-index: 20;
+}
