@@ -66,6 +66,8 @@
   color: var(--white);
   font-size: 0.7rem;
   font-weight: 600;
+  top: unset;
+  bottom: 0;
 }
 .blog-info {
   margin: 1.5rem 0 0;
