@@ -15,8 +15,8 @@
   --gray-9: hsl(0, 0%, 16%);
   --gray-10: hsl(0, 0%, 6%);
   --gutter: 70px;
-  --border-light: 0.5px solid var(--gray-0);
-  --border-dark: 0.5px solid var(--gray-2);
+  --border-light: 0.5px solid var(--gray-4);
+  --border-dark: 0.5px solid var(--gray-1);
   --fb: hsl(220, 46%, 48%);
   --tw: hsl(203, 89%, 53%);
   --in: hsl(213, 63%, 43%);
