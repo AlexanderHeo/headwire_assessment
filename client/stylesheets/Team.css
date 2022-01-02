@@ -1,14 +1,41 @@
 #team {
   position: relative;
-  padding: 3rem 0 0;
+  padding: 3rem 0 12rem;
   background: var(--gray-0);
+}
+.team-carousel {
+  overflow: hidden;
 }
 .team-images {
   display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc(8 * 294px);
+  height: 400px;
+  animation: 20s linear infinite alternate slider;
 }
+@keyframes slider {
+  0% {
+    transform: translateX(0px);
+  }
+  4% {
+    transform: translateX(0px);
+  }
+  96% {
+    transform: translateX(calc(3 * -278px));
+  }
+  100% {
+    transform: translateX(calc(3 * -278px));
+  }
+}
+.team-images.paused,
+.team-images:hover {
+  animation-play-state: paused;
+}
+
 .team-image {
   position: relative;
-  width: calc(100% / 5);
 }
 .team-img-container {
   height: 400px;
@@ -67,28 +94,8 @@
 }
 .team-carousel-control {
   display: flex;
+  justify-content: center;
   margin: 4rem 0;
-}
-.tcc {
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-.tcc-border {
-  border: 1px solid transparent;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.25s ease-in-out;
-}
-.tcc:hover {
-  cursor: pointer;
-}
-.tcc:hover .tcc-border,
-.tcc-border.active {
-  border: 1px solid var(--black);
-  border-radius: 50%;
-  transform: scale(1);
-  transition: 0.25s ease-in-out;
 }
 
 .modal-wrapper {
