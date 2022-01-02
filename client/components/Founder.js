@@ -3,11 +3,11 @@ import '../stylesheets/Founder.css';
 
 const Founder = () => {
   return (
-    <div id='founder' className='flx-cnt w100'>
-      <div className='quote'>
+    <section id='founder' className='flx-cnt w100'>
+      <blockquote className='quote'>
         "Even if you don't have a ready sketch of what you want &mdash; we will
         help you to get the result you dreamed of."
-      </div>
+      </blockquote>
       <img
         src='images/founder-of-company.png'
         alt='David Oswald, founder of company'
@@ -17,7 +17,7 @@ const Founder = () => {
         <p className='founder-title upper'>founder of Company</p>
         <i className='sig'>Oswald</i>
       </div>
-    </div>
+    </section>
   );
 };
 

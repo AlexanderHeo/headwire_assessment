@@ -3,10 +3,10 @@ import '../stylesheets/Services.css';
 
 const Services = () => {
   return (
-    <div id='services'>
+    <section id='services'>
       <div className='title-container flx-cnt-col'>
         <div className='over-title upper'>our services</div>
-        <div className='title cap'>what can we offer</div>
+        <h2 className='title cap'>what can we offer</h2>
       </div>
       <div className='cards-container'>
         <div className='card'>
@@ -52,7 +52,7 @@ const Services = () => {
           <div className='stat-title upper'>offices worldwide</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

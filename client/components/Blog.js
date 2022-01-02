@@ -4,11 +4,11 @@ import '../stylesheets/Blog.css';
 
 const Blog = () => {
   return (
-    <div id='blog'>
+    <section id='blog'>
       <nav>
         <div className='blog-title'>
           <div className='over-title'>Our blog</div>
-          <div className='title'>Read our latest news</div>
+          <h2 className='title'>Read our latest news</h2>
         </div>
         <div className='blog-button'>
           <button>view all</button>
@@ -76,7 +76,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 
