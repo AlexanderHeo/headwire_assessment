@@ -39,7 +39,7 @@ const Team = () => {
   const tccBorder4 = index === 3 ? 'tcc-border active' : 'tcc-border';
 
   return (
-    <div id='team'>
+    <section id='team'>
       {modalOpen && (
         <div className={`${modalClass} pos-abs flx-cnt w100 h100`}>
           <div className='modal-close'>
@@ -73,7 +73,7 @@ const Team = () => {
       )}
       <div className='title-container flx-cnt-col'>
         <div className='over-title upper'>Our professionals</div>
-        <div className='title cap'>Meet our skilled Team</div>
+        <h2 className='title cap'>Meet our skilled Team</h2>
       </div>
       <div className='flx-cnt-col'>
         <div className='team-images'>
@@ -239,7 +239,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
