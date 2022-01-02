@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className='wrapper'>
       <div className='borders w100 h100' />
-      <Header />
+      <Header cart='3' />
       <Founder />
       <Services />
       <Team />
