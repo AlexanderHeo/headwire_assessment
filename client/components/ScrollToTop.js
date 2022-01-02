@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BsArrowUpSquare } from 'react-icons/bs';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,11 +32,9 @@ const ScrollToTop = () => {
   return (
     <>
       {isVisible && (
-        <BsArrowUpSquare
-          className='scroll-to-top'
-          onClick={scrollToTop}
-          size='3rem'
-        />
+        <div className='scroll-to-top flx-cnt'>
+          <AiOutlineArrowUp onClick={scrollToTop} size='2rem' />
+        </div>
       )}
     </>
   );

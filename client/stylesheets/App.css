@@ -72,12 +72,15 @@ h6 {
 }
 
 .scroll-to-top {
+  width: 45px;
+  height: 45px;
   position: sticky;
   bottom: 25px;
   left: 100%;
   margin-top: -48px;
   margin-right: 25px;
-  background: var(--gray-1);
+  color: var(--white);
+  background: var(--gray-3);
   z-index: 20;
 }
 .scroll-to-top:hover {
