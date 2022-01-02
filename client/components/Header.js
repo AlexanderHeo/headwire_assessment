@@ -80,7 +80,7 @@ const Header = ({ cart }) => {
           <ul className='flx-cnt w100 h100 upper'>
             <li>
               <div className='button-cart'>
-                <div className='cart-total flx-cnt'>{cart}</div>
+                <div className='cart-total flx-cnt txt-cnt'>{cart}</div>
                 <RiShoppingBag2Line size='1.2rem' />
               </div>
             </li>
@@ -101,19 +101,19 @@ const Header = ({ cart }) => {
         <ul className='flx-cnt w100 h100 upper'>
           <li>
             instagram
-            <GoTriangleRight className='sm-triangle hide' />
+            <GoTriangleRight className='nav-triangle hide' />
           </li>
           <li>
             facebook
-            <GoTriangleRight className='sm-triangle hide' />
+            <GoTriangleRight className='nav-triangle hide' />
           </li>
           <li>
             twitter
-            <GoTriangleRight className='sm-triangle hide' />
+            <GoTriangleRight className='nav-triangle hide' />
           </li>
           <li>
             pinterest
-            <GoTriangleRight className='sm-triangle hide' />
+            <GoTriangleRight className='nav-triangle hide' />
           </li>
         </ul>
       </nav>

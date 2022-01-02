@@ -15,6 +15,7 @@ const Founder = () => {
       <div className='signature'>
         <p className='cap'>David Oswald</p>
         <p className='founder-title upper'>founder of Company</p>
+        <i className='sig'>Oswald</i>
       </div>
     </div>
   );

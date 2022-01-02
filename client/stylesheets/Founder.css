@@ -1,13 +1,14 @@
 #founder {
-  background: var(--black);
+  background: var(--gray-10);
   color: var(--white);
 }
 .quote {
-  max-width: 26%;
+  max-width: 28%;
   font-size: 1.4rem;
   text-align: right;
   letter-spacing: -0.8px;
   line-height: 1.7;
+  margin-left: -10rem;
 }
 #founder img {
   width: 120px;
@@ -15,9 +16,19 @@
   margin: 4rem 1rem 5rem 3rem;
 }
 .signature {
+  position: relative;
   margin-top: -16px;
 }
 .founder-title {
   font-size: 0.7rem;
   font-weight: 100;
+}
+.sig {
+  font-family: Licorice, cursive;
+  position: absolute;
+  bottom: -40px;
+  right: -70px;
+  font-size: 3rem;
+  color: var(--gray-4);
+  letter-spacing: 5px;
 }

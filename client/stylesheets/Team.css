@@ -25,7 +25,7 @@
   justify-content: flex-end;
 }
 .team-name {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .team-name-container svg {
   margin: 0.5rem auto;
@@ -40,11 +40,11 @@
 }
 .team-title::before {
   content: '[';
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
 }
 .team-title::after {
   content: ']';
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
 }
 .team-name,
 .team-plus,
@@ -75,7 +75,7 @@
   height: 30px;
 }
 .tcc-border {
-  border: 1px solid transparent;
+  border: 1px solid var(--black);
   border-radius: 50%;
   transform: scale(0);
   transition: 0.25s ease-in-out;
@@ -85,8 +85,6 @@
 }
 .tcc:hover .tcc-border,
 .tcc-border.active {
-  border: 1px solid var(--black);
-  border-radius: 50%;
   transform: scale(1);
   transition: 0.25s ease-in-out;
 }
@@ -143,11 +141,6 @@
 }
 .modal-close:hover {
   cursor: pointer;
-}
-.quotes-left {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .quotes-right {
   position: absolute;
