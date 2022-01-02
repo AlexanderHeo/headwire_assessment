@@ -16,7 +16,7 @@ export const HeroImages = [
   },
 ];
 
-export const TeamImages = [
+export const TeamData = [
   {
     imgSource: 'images/john.jpeg',
     altText: 'John Wolksmen, CTO',
