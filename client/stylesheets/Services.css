@@ -3,7 +3,7 @@
   text-align: center;
 }
 .title-container {
-  margin-bottom: 47px;
+  margin-bottom: 3rem;
 }
 .over-title {
   font-size: 0.7rem;
@@ -12,18 +12,18 @@
 .over-title::before,
 .stat::before {
   content: '[';
-  padding: 0 6px;
+  padding: 0 0.4rem;
 }
 .over-title::after,
 .stat::after {
   content: ']';
-  padding: 0 6px;
+  padding: 0 0.4rem;
 }
 .title {
   position: relative;
   width: fit-content;
   font-size: 1.8rem;
-  padding: 8px 0;
+  padding: 0.5rem 0;
   letter-spacing: -0.8px;
 }
 .title::after {
@@ -56,7 +56,7 @@
 }
 .card-title {
   font-size: 1.1rem;
-  padding: 16px;
+  padding: 1rem;
 }
 .card-p {
   font-size: 0.8rem;

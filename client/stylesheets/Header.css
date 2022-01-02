@@ -74,15 +74,14 @@ header li {
 .nav-section:last-of-type li:last-of-type {
   padding: 0;
 }
-.social-media svg.hide,
-.nav-section.main svg.hide {
+.nav-triangle.hide {
   display: none;
 }
 li:hover {
   cursor: pointer;
 }
-.social-media li:hover svg,
-.nav-section.main li:hover svg {
+.social-media li:hover .nav-triangle,
+.nav-section.main li:hover .nav-triangle {
   display: inline-block;
 }
 .nav-triangle {
@@ -104,7 +103,6 @@ li:hover {
   background: var(--black);
   color: var(--white);
   border-radius: 50%;
-  text-align: center;
 }
 .button-hamburger {
   display: inline-flex;
@@ -237,10 +235,10 @@ p {
   line-height: 1.8;
 }
 .hero button {
-  margin-top: 40px;
+  margin-top: 2.4rem;
 }
 button {
-  padding: 14px 30px;
+  padding: 1.1rem 2.2rem;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
