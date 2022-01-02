@@ -32,10 +32,16 @@ const Team = () => {
     setModalOpen(false);
   };
 
+  const modalClass = modalOpen ? 'modal-wrapper' : 'modal-wrapper hide';
+  const tccBorder1 = index === 0 ? 'tcc-border active' : 'tcc-border';
+  const tccBorder2 = index === 1 ? 'tcc-border active' : 'tcc-border';
+  const tccBorder3 = index === 2 ? 'tcc-border active' : 'tcc-border';
+  const tccBorder4 = index === 3 ? 'tcc-border active' : 'tcc-border';
+
   return (
     <div id='team'>
       {modalOpen && (
-        <div className='modal-wrapper pos-abs flx-cnt w100 h100'>
+        <div className={`${modalClass} pos-abs flx-cnt w100 h100`}>
           <div className='modal-close'>
             <AiOutlineClose
               className='modal-close'
@@ -215,17 +221,21 @@ const Team = () => {
           </div>
         </div>
         <div className='team-carousel-control'>
-          <div className='tcc flx-cnt'>
-            <BsDot size='1.5rem' onClick={() => button1()} />
+          <div className='tcc flx-cnt' onClick={() => button1()}>
+            <div className={`${tccBorder1} pos-abs w100 h100`} />
+            <BsDot size='1.5rem' />
           </div>
-          <div className='tcc flx-cnt'>
-            <BsDot size='1.5rem' onClick={() => button2()} />
+          <div className='tcc flx-cnt' onClick={() => button2()}>
+            <div className={`${tccBorder2} pos-abs w100 h100`} />
+            <BsDot size='1.5rem' />
           </div>
-          <div className='tcc flx-cnt'>
-            <BsDot size='1.5rem' onClick={() => button3()} />
+          <div className='tcc flx-cnt' onClick={() => button3()}>
+            <div className={`${tccBorder3} pos-abs w100 h100`} />
+            <BsDot size='1.5rem' />
           </div>
-          <div className='tcc flx-cnt'>
-            <BsDot size='1.5rem' onClick={() => button4()} />
+          <div className='tcc flx-cnt' onClick={() => button4()}>
+            <div className={`${tccBorder4} pos-abs w100 h100`} />
+            <BsDot size='1.5rem' />
           </div>
         </div>
       </div>
