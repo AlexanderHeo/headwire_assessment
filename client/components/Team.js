@@ -63,7 +63,7 @@ const Team = () => {
               </div>
               <div>{modalInfo[0].job_title}</div>
               <div>
-                <ImQuotesLeft className='quotes-left' size='2rem' />
+                <ImQuotesLeft className='quotes-left pos-abs' size='2rem' />
                 {modalInfo[0].description}
                 <ImQuotesRight className='quotes-right' size='2rem' />
               </div>
@@ -72,8 +72,8 @@ const Team = () => {
         </div>
       )}
       <div className='title-container flx-cnt-col'>
-        <div className='over-title'>Our professionals</div>
-        <div className='title'>Meet our skilled Team</div>
+        <div className='over-title upper'>Our professionals</div>
+        <div className='title cap'>Meet our skilled Team</div>
       </div>
       <div className='flx-cnt-col'>
         <div className='team-images'>
