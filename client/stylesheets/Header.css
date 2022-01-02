@@ -38,6 +38,10 @@ header li {
   height: 100%;
   padding: 1rem;
 }
+.main-nav,
+.social-media {
+  z-index: 2;
+}
 .social-media {
   position: absolute;
   height: 100%;
@@ -120,27 +124,42 @@ li:hover {
 }
 .bg img {
   height: 100%;
-  animation: fadeInAndOut 10s forwards infinite ease-in-out;
   background: var(--black);
+}
+.hero-bg {
+  background: var(--black);
+  animation: fadeInAndOut 10s forwards infinite ease-in-out;
 }
 @keyframes fadeInAndOut {
   0% {
-    opacity: 0.5;
+    opacity: 1;
   }
-  2% {
+  1% {
     opacity: 0.75;
   }
+  2% {
+    opacity: 0.5;
+  }
+  3% {
+    opacity: 0.25;
+  }
   4% {
-    opacity: 1;
+    opacity: 0;
   }
   96% {
-    opacity: 1;
+    opacity: 0;
+  }
+  97% {
+    opacity: 0.25;
   }
   98% {
+    opacity: 0.5;
+  }
+  99% {
     opacity: 0.75;
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 .bg-nav {

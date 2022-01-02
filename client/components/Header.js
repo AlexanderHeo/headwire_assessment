@@ -118,6 +118,7 @@ const Header = ({ cart }) => {
         </ul>
       </nav>
       <div className='hero flx-cnt-col w100 h100'>
+        <div className='hero-bg pos-abs w100 h100' />
         <div className='bg pos-abs h100'>
           <img
             src={HeroImages[currentIndex].imgSource}
