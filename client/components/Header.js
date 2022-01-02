@@ -9,7 +9,7 @@ import { HeroImages } from '../lib/images';
 import '../stylesheets/Header.css';
 import Logo from './logo.svg';
 
-const Header = () => {
+const Header = ({ cart }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -42,12 +42,12 @@ const Header = () => {
           <img src={Logo} alt="theratio's logo" />
           <div className='logo-background pos-abs h100' />
         </div>
-        <div className='nav-section'>
+        <div className='nav-section main'>
           <ul className='flx-cnt w100 h100 upper'>
             <li>
               home
               <BiChevronDown />
-              <GoTriangleUp className='nav-triangle hide' />
+              <GoTriangleUp className='nav-triangle' />
             </li>
             <li>
               pages
@@ -80,6 +80,7 @@ const Header = () => {
           <ul className='flx-cnt w100 h100 upper'>
             <li>
               <div className='button-cart'>
+                <div className='cart-total flx-cnt'>{cart}</div>
                 <RiShoppingBag2Line size='1.2rem' />
               </div>
             </li>
@@ -117,6 +118,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className='hero flx-cnt-col w100 h100'>
+        <div className='hero-bg pos-abs w100 h100' />
         <div className='bg pos-abs h100'>
           <img
             src={HeroImages[currentIndex].imgSource}

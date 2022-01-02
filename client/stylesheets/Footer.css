@@ -16,7 +16,7 @@ footer {
 .footer-col p {
   font-size: 0.8rem;
   font-weight: 100;
-  color: var(--gray-2);
+  color: var(--gray-3);
 }
 .footer-sm-container {
   display: flex;
@@ -34,21 +34,20 @@ footer {
   transform: scale(1.2);
   transition: 0.25s ease-in-out;
 }
+.footer-sm:hover a {
+  color: var(--white);
+}
 .footer-sm:hover.fb {
   background: var(--fb);
-  color: var(--white);
 }
 .footer-sm:hover.tw {
   background: var(--tw);
-  color: var(--white);
 }
 .footer-sm:hover.in {
   background: var(--in);
-  color: var(--white);
 }
 .footer-sm:hover.ig {
   background: var(--ig);
-  color: var(--white);
 }
 .footer-title {
   height: 50px;
@@ -58,12 +57,10 @@ footer {
 }
 .footer-subsection {
   font-size: 0.8rem;
-  letter-spacing: 0.5px;
-  color: var(--gray-2);
+  color: var(--gray-3);
 }
 .footer-subsection div {
   margin: 1rem 0;
-  color: var(--gray-2);
 }
 .footer-subsection .input-container {
   position: relative;
@@ -73,14 +70,8 @@ footer {
   display: flex;
   align-items: center;
 }
-.location:hover {
-  cursor: pointer;
-}
-.footer-col:nth-child(3) .footer-subsection div {
-  cursor: pointer;
-}
 .location svg {
-  margin-right: 6px;
+  margin-right: 0.8rem;
 }
 .input-container {
   position: relative;
@@ -99,6 +90,9 @@ footer {
   height: 1.5rem;
   width: 1.5rem;
 }
+.input-container svg:hover {
+  cursor: pointer;
+}
 .fineprint,
 .tso-policy {
   display: flex;
@@ -111,16 +105,22 @@ footer {
 .fineprint span {
   color: var(--white);
 }
-.fineprint span:hover {
-  cursor: pointer;
-}
 .tou {
   margin-right: 12px;
 }
 .policy {
   margin-left: 12px;
 }
+.location:hover a,
+.footer-col:nth-child(3) .footer-subsection div:hover,
+.fineprint span:hover,
 .tou:hover,
 .policy:hover {
   cursor: pointer;
+  color: var(--white);
+}
+a {
+  color: var(--gray-3);
+  text-decoration: none;
+  display: flex;
 }
