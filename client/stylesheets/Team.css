@@ -3,12 +3,36 @@
   padding: 3rem 0 0;
   background: var(--gray-0);
 }
+.team-carousel {
+  overflow: hidden;
+}
 .team-images {
   display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc(8 * 294px);
+  height: 400px;
+  transition: 0.25s ease-in-out;
+}
+.team-images.zero {
+  transform: translateX(0);
+  transition: 0.25s ease-in-out;
+}
+.team-images.one {
+  transform: translateX(-270px);
+  transition: 0.25s ease-in-out;
+}
+.team-images.two {
+  transform: translateX(calc(2 * -285px));
+  transition: 0.25s ease-in-out;
+}
+.team-images.three {
+  transform: translateX(calc(3 * -278px));
+  transition: 0.25s ease-in-out;
 }
 .team-image {
   position: relative;
-  width: calc(100% / 5);
 }
 .team-img-container {
   height: 400px;
@@ -67,6 +91,7 @@
 }
 .team-carousel-control {
   display: flex;
+  justify-content: center;
   margin: 3rem 0 5.5rem;
 }
 .tcc {
