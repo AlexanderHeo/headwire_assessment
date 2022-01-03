@@ -143,20 +143,12 @@ const Header = ({ cart }) => {
         </div>
         <button>view projects</button>
       </div>
-      <div className='bg-nav'>
+      <div className='bg-nav' onClick={() => previousIndex()}>
         <div className='bg-nav-arrow'>
-          <FiArrowLeft
-            strokeWidth='1'
-            size='1.5rem'
-            onClick={() => previousIndex()}
-          />
+          <FiArrowLeft strokeWidth='1' size='1.5rem' />
         </div>
-        <div className='bg-nav-arrow'>
-          <FiArrowRight
-            strokeWidth='1'
-            size='1.5rem'
-            onClick={() => nextIndex()}
-          />
+        <div className='bg-nav-arrow' onClick={() => nextIndex()}>
+          <FiArrowRight strokeWidth='1' size='1.5rem' />
         </div>
       </div>
     </header>
