@@ -4,10 +4,14 @@ footer {
 }
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
   grid-gap: 1rem;
-  padding: 5rem 18rem 4rem;
+  padding: 5rem 0 4rem;
   border-bottom: 1px solid var(--gray-4);
+}
+.footer-col {
+  width: 220px;
 }
 .footer-col .logo {
   width: 65%;

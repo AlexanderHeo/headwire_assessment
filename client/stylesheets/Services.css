@@ -1,5 +1,5 @@
 #services {
-  padding: 5.2rem 4rem 3.3rem;
+  padding: 5.2rem 0;
   text-align: center;
 }
 .title-container {
@@ -37,15 +37,14 @@
 }
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 1.5rem;
   justify-content: center;
-  padding: 0 14rem 2rem;
 }
 .card {
   width: 300px;
   height: 260px;
-  padding: 1.3rem 3rem;
+  padding: 1.3rem 0;
   background: var(--gray-0);
 }
 .card img {
@@ -57,31 +56,35 @@
 }
 .card-title {
   font-size: 1.1rem;
-  padding: 1rem;
+  padding: 1.4rem 0 0.7rem;
 }
 .card-p {
-  font-size: 0.8rem;
+  width: 60%;
+  font-size: 0.9rem;
   font-weight: 100;
+  letter-spacing: -1.1px;
   margin: 0 auto;
 }
 .read-more {
-  margin: 1rem 0;
-  font-size: 0.7rem;
-  font-weight: 600;
+  margin: 0.7rem 0;
+  font-size: 0.6rem;
+  font-weight: 800;
 }
 
 .stats-container {
   display: flex;
-  padding: 4rem 12rem 2rem;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 6.3rem 0 0;
 }
 .stats {
-  margin: 0 2rem;
+  width: 150px;
+  margin: 0 2.5rem;
 }
 .stat {
   font-size: 2rem;
   color: var(--gray-2);
 }
 .stat-title {
+  font-size: 0.8rem;
   font-weight: 600;
 }

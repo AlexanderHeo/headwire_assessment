@@ -7,8 +7,8 @@ const Blog = () => {
     <section id='blog'>
       <nav>
         <div className='blog-title'>
-          <div className='over-title'>Our blog</div>
-          <h2 className='title'>Read our latest news</h2>
+          <div className='over-title upper'>Our blog</div>
+          <h2 className='title cap'>Read our latest news</h2>
         </div>
         <div className='blog-button'>
           <button>view all</button>
@@ -48,7 +48,7 @@ const Blog = () => {
               <small className='upper'>tom black</small>
             </div>
             <div className='blog-title'>
-              Top 10 tips for your Kitchen Interior Design
+              The Golden Ratio Rules for Best 2D Sketch
             </div>
             <div className='blog-p'>
               <p>A faceting effect livens up and ...</p>
@@ -68,7 +68,7 @@ const Blog = () => {
               <small className='upper'>tom black</small>
             </div>
             <div className='blog-title'>
-              Top 10 tips for your Kitchen Interior Design
+              Use Pastel Colors & Natural Materials
             </div>
             <div className='blog-p'>
               <p>A faceting effect livens up and ...</p>
