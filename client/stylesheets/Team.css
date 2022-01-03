@@ -33,6 +33,7 @@
 }
 .team-image {
   position: relative;
+  width: calc(100% / 5);
 }
 .team-img-container {
   height: 400px;
