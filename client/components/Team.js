@@ -38,6 +38,24 @@ const Team = () => {
   const tccBorder3 = index === 2 ? 'tcc-border active' : 'tcc-border';
   const tccBorder4 = index === 3 ? 'tcc-border active' : 'tcc-border';
 
+  let teamImagesClass;
+  switch (index) {
+    case 0:
+      teamImagesClass = 'team-images zero';
+      break;
+    case 1:
+      teamImagesClass = 'team-images one';
+      break;
+    case 2:
+      teamImagesClass = 'team-images two';
+      break;
+    case 3:
+      teamImagesClass = 'team-images three';
+      break;
+    default:
+      teamImagesClass = 'team-images four';
+  }
+
   return (
     <section id='team'>
       {modalOpen && (
@@ -75,9 +93,39 @@ const Team = () => {
         <div className='over-title upper'>Our professionals</div>
         <h2 className='title cap'>Meet our skilled Team</h2>
       </div>
-      <div className='flx-cnt-col'>
-        <div className='team-images'>
-          <div className='team-image'>
+      <div className='team-carousel'>
+        <div className={teamImagesClass}>
+          {TeamData.map((mate, index) => {
+            return (
+              <div className='team-image' key={index}>
+                <div className='team-overlay flx-cnt-col pos-abs w100 h100'>
+                  <div className='team-name-container flx-cnt-col h100'>
+                    <div className='team-name'>
+                      {TeamData[index].first_name} {TeamData[index].last_name}
+                    </div>
+                    <FiPlus
+                      className='team-plus'
+                      size='2rem'
+                      data-name={`${TeamData[index].first_name} ${TeamData[index].last_name}`}
+                      onClick={(e) => handleTeamModal(e)}
+                    />
+                  </div>
+                  <div className='team-title-container'>
+                    <div className='team-title upper'>
+                      {TeamData[index].job_title}
+                    </div>
+                  </div>
+                </div>
+                <div className='team-img-container'>
+                  <img
+                    src={TeamData[index].imgSource}
+                    alt={TeamData[index].altText}
+                  />
+                </div>
+              </div>
+            );
+          })}
+          {/* <div className='team-image'>
             <div className='team-overlay flx-cnt-col pos-abs w100 h100'>
               <div className='team-name-container flx-cnt-col h100'>
                 <div className='team-name'>
@@ -218,7 +266,7 @@ const Team = () => {
                 alt={TeamData[index + 4].altText}
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='team-carousel-control'>
           <div className='tcc flx-cnt' onClick={() => button1()}>
